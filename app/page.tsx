@@ -11,6 +11,7 @@ import { AddFoodModal } from "@/components/add-food-modal"
 import { EditFoodModal } from "@/components/edit-food-modal"
 import { DeleteFoodModal } from "@/components/delete-food-modal"
 import { Footer } from "@/components/footer"
+import Image from "next/image";
 
 interface Food {
   id: string
@@ -161,13 +162,16 @@ export default function HomePage() {
             </div>
 
             <div className="hidden lg:block">
-              <div className="relative">
-                <img
-                  src="/placeholder.svg?height=400&width=400"
+                <div className="relative">
+                <Image
+                  src="/placeholder.svg"
                   alt="Delicious food bowl"
+                  width={400}
+                  height={400}
                   className="w-full max-w-md mx-auto rounded-full"
+                  priority
                 />
-              </div>
+                </div>
             </div>
           </div>
         </div>
