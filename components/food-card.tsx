@@ -42,9 +42,12 @@ export function FoodCard({ food, onEdit, onDelete }: FoodCardProps) {
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <div className="relative rounded-t-lg overflow-hidden">
         <img src={food.avatar || "/placeholder.svg"} alt={food.name} className="w-full h-48 object-cover" />
-        <div className="absolute  top-3 left-3 bg-[#F65900] text-white px-2 py-1 rounded text-sm font-medium">
-          ${price}
-          <Image src="/icon.png" alt="img" width={10} height={10} />
+        <div className="absolute  flex gap-1 justify-between top-3 left-3 bg-[#F65900] text-white px-2 py-1 rounded text-sm font-medium">
+          <Image className="object-contain" src="/icon.png" alt="img" width={15} height={10} />
+          <div>
+
+            ${price}
+          </div>
         </div>
         <div className="absolute top-3 right-3">
           <div className="relative">
