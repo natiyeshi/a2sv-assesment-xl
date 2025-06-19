@@ -3,6 +3,7 @@
 import { Star, MoreVertical } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import Image from "next/image"
 
 interface Food {
   id: string
@@ -41,7 +42,7 @@ export function FoodCard({ food, onEdit, onDelete }: FoodCardProps) {
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <div className="relative rounded-t-lg overflow-hidden">
         <img src={food.avatar || "/placeholder.svg"} alt={food.name} className="w-full h-48 object-cover" />
-        <div className="absolute top-3 left-3 bg-[#FFB30E] text-white px-2 py-1 rounded text-sm font-medium">
+        <div className="absolute top-3 left-3 bg-[#F65900] text-white px-2 py-1 rounded text-sm font-medium">
           ${price}
         </div>
         <div className="absolute top-3 right-3">
@@ -83,7 +84,7 @@ export function FoodCard({ food, onEdit, onDelete }: FoodCardProps) {
 
       <div className="p-4">
         <div className="flex items-center gap-3 mb-2">
-          <img src={food.logo || "/placeholder.svg"} alt="Restaurant logo" className="w-8 h-8 rounded object-cover" />
+          <Image src={food.logo || "/placeholder.svg"} alt="Restaurant logo" className="w-8 h-8 rounded object-cover" width={100} height={100} />
           <div className="flex-1">
             <h3 className="restaurant-name font-semibold text-gray-900 text-sm">{food.name}</h3>
             <div className="flex items-center gap-1">

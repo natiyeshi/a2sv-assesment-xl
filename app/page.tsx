@@ -12,7 +12,8 @@ import { EditFoodModal } from "@/components/edit-food-modal"
 import { DeleteFoodModal } from "@/components/delete-food-modal"
 import { Footer } from "@/components/footer"
 import Image from "next/image";
-
+import { FaMotorcycle } from "react-icons/fa";
+import { FaBagShopping } from "react-icons/fa6";
 interface Food {
   id: string
   name: string
@@ -122,19 +123,19 @@ export default function HomePage() {
                   <button
                     onClick={() => setDeliveryType("delivery")}
                     className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
-                      deliveryType === "delivery" ? "bg-[#FFB30E]/10 text-[#FFB30E]" : "text-gray-600 hover:bg-gray-100"
+                      deliveryType === "delivery" ? "bg-[#F65900]/10 text-[#F65900]" : "text-gray-600 hover:bg-gray-100"
                     }`}
                   >
-                    <div className="w-4 h-4 bg-[#FFB30E] rounded-full"></div>
+                   <FaMotorcycle />
                     Delivery
                   </button>
                   <button
                     onClick={() => setDeliveryType("pickup")}
                     className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
-                      deliveryType === "pickup" ? "bg-[#FFB30E]/10 text-[#FFB30E]" : "text-gray-600 hover:bg-gray-100"
+                      deliveryType === "pickup" ? "bg-[#F65900]/10 text-[#F65900]" : "text-gray-600 hover:bg-gray-100"
                     }`}
                   >
-                    <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
+                    <FaBagShopping />
                     Pickup
                   </button>
                 </div>
