@@ -11,9 +11,7 @@ import { AddFoodModal } from "@/components/add-food-modal"
 import { EditFoodModal } from "@/components/edit-food-modal"
 import { DeleteFoodModal } from "@/components/delete-food-modal"
 import { Footer } from "@/components/footer"
-import Image from "next/image";
-import { FaMotorcycle } from "react-icons/fa";
-import { FaBagShopping } from "react-icons/fa6";
+
 interface Food {
   id: string
   name: string
@@ -98,7 +96,10 @@ export default function HomePage() {
       <header className="bg-white border-b border-gray-100 px-4 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/Logo.svg" alt="Logo" width={124} height={100} />
+            <div className="w-8 h-8 bg-[#FFB30E] rounded flex items-center justify-center">
+              <span className="text-white font-bold text-sm">🍔</span>
+            </div>
+            <span className="text-xl font-bold text-gray-900">FoodWagen</span>
           </div>
           <Button
             onClick={handleAddFood}
@@ -110,7 +111,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r overflow-hidden from-[#FFB30E]/80 to-[#FFB30E] px-4 py-16">
+      <section className="bg-gradient-to-r from-[#FFB30E]/80 to-[#FFB30E] px-4 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -160,16 +161,13 @@ export default function HomePage() {
             </div>
 
             <div className="hidden lg:block">
-                <div className="relative top-[100px]">
-                <Image
-                  src="/img.png"
+              <div className="relative">
+                <img
+                  src="/placeholder.svg?height=400&width=400"
                   alt="Delicious food bowl"
-                  width={400}
-                  height={400}
                   className="w-full max-w-md mx-auto rounded-full"
-                  priority
                 />
-                </div>
+              </div>
             </div>
           </div>
         </div>
