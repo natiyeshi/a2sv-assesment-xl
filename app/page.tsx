@@ -11,6 +11,8 @@ import { AddFoodModal } from "@/components/add-food-modal"
 import { EditFoodModal } from "@/components/edit-food-modal"
 import { DeleteFoodModal } from "@/components/delete-food-modal"
 import { Footer } from "@/components/footer"
+import { FaMotorcycle } from "react-icons/fa";
+import { FaBagShopping } from "react-icons/fa6";
 
 interface Food {
   id: string
