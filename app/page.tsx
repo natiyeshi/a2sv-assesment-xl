@@ -97,10 +97,7 @@ export default function HomePage() {
       <header className="bg-white border-b border-gray-100 px-4 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#FFB30E] rounded flex items-center justify-center">
-              <span className="text-white font-bold text-sm">🍔</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">FoodWagen</span>
+            <Image src="/Logo.svg" alt="Logo" width={124} height={100} />
           </div>
           <Button
             onClick={handleAddFood}
@@ -112,7 +109,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#FFB30E]/80 to-[#FFB30E] px-4 py-16">
+      <section className="bg-gradient-to-r overflow-hidden from-[#FFB30E]/80 to-[#FFB30E] px-4 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -162,9 +159,9 @@ export default function HomePage() {
             </div>
 
             <div className="hidden lg:block">
-                <div className="relative">
+                <div className="relative top-[100px]">
                 <Image
-                  src="/placeholder.svg"
+                  src="/img.png"
                   alt="Delicious food bowl"
                   width={400}
                   height={400}
