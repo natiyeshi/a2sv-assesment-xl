@@ -159,7 +159,7 @@ export function EditFoodModal({ isOpen, food, onClose, onSuccess }: EditFoodModa
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md overflow-auto h-[90vh]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-[#FFB30E] text-center">Edit Meal</DialogTitle>
         </DialogHeader>

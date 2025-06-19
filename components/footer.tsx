@@ -1,6 +1,7 @@
 import { Instagram, Facebook, Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import CustomButton from "./custome-button"
 
 export function Footer() {
   return (
@@ -104,7 +105,8 @@ export function Footer() {
                 className="email-input bg-gray-800 border-gray-700 text-white placeholder-gray-400"
                 placeholder="Enter Your email"
               />
-              <Button className="bg-[#FFB30E] hover:bg-[#FFB30E]/90 text-white px-6">Subscribe</Button>
+              {/* <Button className="bg-[#FFB30E] hover:bg-[#FFB30E]/90 text-white px-6">Subscribe</Button> */}
+              <CustomButton>Subscribe</CustomButton>
             </div>
           </div>
         </div>

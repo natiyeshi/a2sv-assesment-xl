@@ -101,7 +101,7 @@ export function FoodCard({ food, onEdit, onDelete }: FoodCardProps) {
         <div className="flex items-center justify-between">
           <span className="restaurant-price text-lg font-bold text-gray-900">${price}</span>
           <span
-            className={`restaurant-status font-semibold px-2 py-1 rounded-full text-xs font-medium ${
+            className={`restaurant-status font-bold py-2 px-3 rounded-full text-xs  ${
               isOpen ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
             }`}
           >

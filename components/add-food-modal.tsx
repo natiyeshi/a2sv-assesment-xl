@@ -143,7 +143,7 @@ export function AddFoodModal({ isOpen, onClose, onSuccess }: AddFoodModalProps) 
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md overflow-auto h-[90vh]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-[#FFB30E] text-center">Add a meal</DialogTitle>
         </DialogHeader>
@@ -170,7 +170,7 @@ export function AddFoodModal({ isOpen, onClose, onSuccess }: AddFoodModalProps) 
               type="number"
               step="0.1"
               min="0"
-              max="5"
+              max={"5"}
               placeholder="Food rating"
               value={formData.food_rating}
               onChange={(e) => handleInputChange("food_rating", e.target.value)}
