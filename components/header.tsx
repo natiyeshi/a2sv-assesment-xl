@@ -15,6 +15,7 @@ const Header = ({ handleAddFood }: { handleAddFood: Function }) => {
             height={100}
           />
         </div>
+        
         <CustomButton
           onClick={() => handleAddFood()}
           className="bg-[#FFB30E] hover:bg-[#FFB30E]/90 text-white px-6 py-[4px] rounded-lg shadow-md"

@@ -4,7 +4,7 @@ import { Star, MoreVertical } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import Image from "next/image"
-
+import icon from "@/../public/icon.png"
 interface Food {
   id: string
   name: string
@@ -43,7 +43,7 @@ export function FoodCard({ food, onEdit, onDelete }: FoodCardProps) {
       <div className="relative rounded-t-lg overflow-hidden">
         <img src={food.avatar || "/placeholder.svg"} alt={food.name} className="w-full h-48 object-cover" />
         <div className="absolute  flex gap-1 justify-between top-3 left-3 bg-[#F65900] text-white px-2 py-1 rounded text-sm font-medium">
-          <Image className="object-contain" src="/icon.png" alt="img" width={15} height={10} />
+          <Image className="object-contain" src="/Icon.png" alt="img" width={15} height={10} />
           <div>
 
             ${price}
