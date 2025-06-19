@@ -154,7 +154,7 @@ export default function HomePage() {
                       className="pl-10 py-3 border-gray-200 focus:border-[#FFB30E] focus:ring-[#FFB30E]"
                     />
                   </div>
-                  <Button type="submit" className="bg-[#FFB30E] hover:bg-[#FFB30E]/90 text-white px-6 py-3">
+                  <Button type="submit" className="bg-gradient-to-r from-[#FF7A7A] to-[#F65900] text-white px-6 py-3">
                     Find Meal
                   </Button>
                 </form>
@@ -201,7 +201,7 @@ export default function HomePage() {
 
           {foods.length > 0 && (
             <div className="text-center mt-12">
-              <Button variant="outline" className="border-[#FFB30E] text-[#FFB30E] hover:bg-[#FFB30E]/5 px-8 py-3">
+              <Button className="bg-[#FFB30E] hover:bg-[#FFB30E]/90 text-white px-6 py-3">
                 Load more
               </Button>
             </div>
